@@ -17,6 +17,13 @@ Morgenruf replaces expensive SaaS standup tools with a lightweight, self-hosted 
 | Open source | ✅ MIT | ❌ | ❌ | ❌ |
 | Kubernetes / Helm | ✅ | ❌ | ❌ | ❌ |
 | Your data, your infra | ✅ | ❌ | ❌ | ❌ |
+| Custom questions | ✅ | ✅ | ✅ | ❌ |
+| Skip today | ✅ | ✅ | ✅ | ❌ |
+| Per-user timezone | ✅ | ✅ | ✅ | ❌ |
+| Mood tracking | ✅ | ❌ | ✅ | ❌ |
+| Analytics dashboard | ✅ | ✅ | ✅ | ❌ |
+| Weekly email digest | ✅ | ✅ | ✅ | ❌ |
+| Webhooks | ✅ | ❌ | ❌ | ❌ |
 
 ---
 
@@ -33,11 +40,16 @@ Morgenruf replaces expensive SaaS standup tools with a lightweight, self-hosted 
 ## Quick Start
 
 ```bash
-helm upgrade --install morgenruf \
-  oci://ghcr.io/morgenruf/helm/morgenruf \
+helm repo add morgenruf https://charts.morgenruf.dev
+helm repo update
+helm upgrade --install morgenruf morgenruf/morgenruf \
   --namespace morgenruf --create-namespace \
-  --set secret.slackBotToken="xoxb-..." \
-  --set secret.slackSigningSecret="..."
+  --set slack.clientId="YOUR_CLIENT_ID" \
+  --set slack.clientSecret="YOUR_CLIENT_SECRET" \
+  --set slack.signingSecret="YOUR_SIGNING_SECRET" \
+  --set externalDatabase.url="postgresql://user:pass@host:5432/morgenruf" \
+  --set flaskSecretKey="$(openssl rand -hex 32)" \
+  --set app.url="https://api.your-domain.com"
 ```
 
 ➡️ Full docs at [docs.morgenruf.dev](https://docs.morgenruf.dev)
