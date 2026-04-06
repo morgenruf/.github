@@ -2,7 +2,7 @@
 
 **Self-hosted daily standup bot for Slack — open source, Kubernetes-native, free forever.**
 
-> *Morgenruf* (German) — "morning call"
+> *Morgenruf* (German) — "morning call" · Built over a weekend at a Tim Hortons in Toronto 🇨🇦☕
 
 [![Release](https://img.shields.io/github/v/release/morgenruf/morgenruf?label=latest&color=brightgreen)](https://github.com/morgenruf/morgenruf/releases/tag/v1.0.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/morgenruf/morgenruf/blob/main/LICENSE)
