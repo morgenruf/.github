@@ -5,7 +5,10 @@
   Open source, Kubernetes-native, free for every seat, forever.
 </p>
 
-<p align="center"><em>Morgenruf</em> (German) — <em>morning call</em></p>
+<p align="center">
+  <em>Morgenruf</em> (German), <em>morning call</em><br>
+  <sub>Built over a weekend at a Tim Hortons in Toronto 🇨🇦☕</sub>
+</p>
 
 <p align="center">
   <a href="https://github.com/morgenruf/morgenruf/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/morgenruf/morgenruf?label=release&color=2ea043"></a>
@@ -50,19 +53,19 @@ Compose and CloudFormation. Full instructions at
 
 ## What it does
 
-**Standups** — as many as you need, each with its own channel, schedule, timezone,
+**Standups.** as many as you need, each with its own channel, schedule, timezone,
 questions and participants. A morning and an evening call for the same team is fine.
 
-**Collection** — a DM at the scheduled time, a reminder if you want one, and an edit
+**Collection.** a DM at the scheduled time, a reminder if you want one, and an edit
 window afterwards. People on leave are skipped rather than nagged.
 
-**Summaries** — grouped by person or by question, posted to the channel, optionally
+**Summaries.** grouped by person or by question, posted to the channel, optionally
 threaded so the channel stays quiet. Optional AI summary via GPT or Claude.
 
-**Reading it back** — a dashboard with participation per standup, per person, and
+**Reading it back.** a dashboard with participation per standup, per person, and
 CSV export. Weekly digest by email if you want it out of Slack entirely.
 
-**Wiring it up** — signed webhooks on standup events, automation rules, and an MCP
+**Wiring it up.** signed webhooks on standup events, automation rules, and an MCP
 server so Claude, Cursor or Copilot can query your standup history directly.
 
 ## Why self-host
