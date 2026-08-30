@@ -53,19 +53,19 @@ Compose and CloudFormation. Full instructions at
 
 ## What it does
 
-**Standups.** as many as you need, each with its own channel, schedule, timezone,
+**Standups.** As many as you need, each with its own channel, schedule, timezone,
 questions and participants. A morning and an evening call for the same team is fine.
 
-**Collection.** a DM at the scheduled time, a reminder if you want one, and an edit
+**Collection.** A DM at the scheduled time, a reminder if you want one, and an edit
 window afterwards. People on leave are skipped rather than nagged.
 
-**Summaries.** grouped by person or by question, posted to the channel, optionally
+**Summaries.** Grouped by person or by question, posted to the channel, optionally
 threaded so the channel stays quiet. Optional AI summary via GPT or Claude.
 
-**Reading it back.** a dashboard with participation per standup, per person, and
+**Reading it back.** A dashboard with participation per standup, per person, and
 CSV export. Weekly digest by email if you want it out of Slack entirely.
 
-**Wiring it up.** signed webhooks on standup events, automation rules, and an MCP
+**Wiring it up.** Signed webhooks on standup events, automation rules, and an MCP
 server so Claude, Cursor or Copilot can query your standup history directly.
 
 ## Why self-host
