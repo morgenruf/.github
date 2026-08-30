@@ -1,0 +1,37 @@
+name: Feature request
+description: Suggest something Morgenruf should do
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you hitting
+      description: >
+        Describe the situation rather than the solution. The underlying problem is
+        usually solvable in more ways than the one that first comes to mind.
+      placeholder: >
+        We run standups for six teams and I cannot tell at a glance which ones nobody
+        answered today.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you had in mind
+    validations:
+      required: true
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How you handle it today
+      description: What you do now, and why it is not good enough.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and discussions
+          required: true

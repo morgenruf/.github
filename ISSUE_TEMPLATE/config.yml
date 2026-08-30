@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/morgenruf/morgenruf/security/advisories/new
+    about: Report privately. Please do not open a public issue.
+  - name: Question or idea
+    url: https://github.com/morgenruf/morgenruf/discussions
+    about: Discussions are a better fit than an issue for open-ended questions.
+  - name: Documentation
+    url: https://docs.morgenruf.dev
+    about: Install, configuration and self-hosting guides.
