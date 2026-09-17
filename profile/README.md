@@ -7,7 +7,7 @@
 
 <p align="center">
   <em>Morgenruf</em> (German), <em>morning call</em><br>
-  <sub>Built over a weekend at a Tim Hortons in Toronto 🇨🇦☕</sub>
+  <sub>Built over a weekend at a Tim Hortons in Kitchener 🇨🇦☕</sub>
 </p>
 
 <p align="center">
