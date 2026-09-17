@@ -1,7 +1,8 @@
 <h1 align="center">🌅 Morgenruf</h1>
 
 <p align="center">
-  <strong>The daily standup bot you host yourself.</strong><br>
+  <strong>The team rituals you host yourself.</strong><br>
+  Async standups, coffee chats, kudos and the insights they add up to.<br>
   Open source, Kubernetes-native, free for every seat, forever.
 </p>
 
@@ -21,12 +22,13 @@
 ---
 
 Standup tools charge per person, per month, to send a message and collect a reply.
-Morgenruf does the same job on your own infrastructure, for nothing, and the data
+Pairing tools charge again for the introductions. Recognition tools charge a third
+time. Morgenruf does all three on your own infrastructure, for nothing, and the data
 never leaves it.
 
-It DMs each teammate at their standup time, collects structured answers, and posts a
-grouped summary to your channel. Multiple standups, per-person timezones, custom
-questions, and a dashboard to read it all back.
+Four modules over one deployment and one database. Each owns its schedule, its Slack
+handlers and its dashboard pages, and any of them can be switched off without
+touching the others.
 
 ## Install
 
@@ -55,18 +57,32 @@ Compose and CloudFormation. Full instructions at
 
 **Standups.** As many as you need, each with its own channel, schedule, timezone,
 questions and participants. A morning and an evening call for the same team is fine.
+A DM at the scheduled time, a reminder if you want one, and an edit window
+afterwards. People on leave are skipped rather than nagged. Summaries post to the
+channel grouped by person or by question, optionally threaded so the channel stays
+quiet, and each standup can email its own lead rather than one address for the lot.
 
-**Collection.** A DM at the scheduled time, a reminder if you want one, and an edit
-window afterwards. People on leave are skipped rather than nagged.
+**Coffee chats.** Pairs people from a channel on a cadence, avoiding whoever they met
+last time. Odd numbers form one group of three so nobody sits out. The introduction
+carries an opener, a room if you set one, and times that suit both people's working
+hours, each a click away from their calendar. Three days later it nudges pairs who
+have not met; on day six it asks whether they did.
 
-**Summaries.** Grouped by person or by question, posted to the channel, optionally
-threaded so the channel stays quiet. Optional AI summary via GPT or Claude.
+That answer is reported four ways rather than two, because *did not meet*, *never
+answered* and *never delivered* mean different things, and only the last is a fault
+of ours.
 
-**Reading it back.** A dashboard with participation per standup, per person, and
-CSV export. Weekly digest by email if you want it out of Slack entirely.
+**Kudos.** `kudos @teammate nice work on the deploy`, with a daily allowance that
+resets at midnight in each person's own timezone. Leaderboards for who is recognised
+and for who does the recognising, since the second is what keeps the habit alive.
 
-**Wiring it up.** Signed webhooks on standup events, automation rules, and an MCP
-server so Claude, Cursor or Copilot can query your standup history directly.
+**Insights.** The questions that need two of those datasets at once: a blocker nobody
+has cleared in days, someone who answers every standup and is thanked by nobody.
+
+**Wiring it up.** Signed webhooks, automation rules, and an MCP server with seventeen
+tools so Claude, Cursor or Copilot can ask about any of it. The tool list respects
+the same per-workspace switches the dashboard does, so an assistant is never offered
+a feature that workspace has turned off.
 
 ## Why self-host
 
@@ -76,6 +92,7 @@ server so Claude, Cursor or Copilot can query your standup history directly.
 | Where standup data lives | your database | the vendor's |
 | Source | MIT, all of it | closed |
 | Kubernetes and Helm | first class | not offered |
+| Standups, pairing and recognition | one app | usually three subscriptions |
 | Leaving | it is already yours | export and migrate |
 
 Feature-by-feature comparisons age badly, so this table sticks to what is structural.
