@@ -63,10 +63,13 @@ channel grouped by person or by question, optionally threaded so the channel sta
 quiet, and each standup can email its own lead rather than one address for the lot.
 
 **Coffee chats.** Pairs people from a channel on a cadence, avoiding whoever they met
-last time. Odd numbers form one group of three so nobody sits out. The introduction
-carries an opener, a room if you set one, and times that suit both people's working
-hours, each a click away from their calendar. Three days later it nudges pairs who
-have not met; on day six it asks whether they did.
+last time. Groups of two to eight, and a remainder of two forms its own group rather
+than being folded into a larger one. The introduction carries an opener and times
+that suit both people's working hours; they vote with a button, and the hour they
+both pick becomes the meeting. Connect Zoom and it is booked at that hour, on the
+account of whoever in the pair linked it. Anyone can ask for a different match, once
+per round. Three days later it nudges pairs who have not met; on day six it asks
+whether they did.
 
 That answer is reported four ways rather than two, because *did not meet*, *never
 answered* and *never delivered* mean different things, and only the last is a fault
@@ -78,6 +81,12 @@ and for who does the recognising, since the second is what keeps the habit alive
 
 **Insights.** The questions that need two of those datasets at once: a blocker nobody
 has cleared in days, someone who answers every standup and is thanked by nobody.
+
+**Who runs what.** Roles used to be workspace-wide, so putting a team lead in charge
+of the standups meant handing them webhooks and API keys as well. A grant is per
+feature: the lead runs the standups, someone in HR runs coffee chats and kudos, and
+neither can mint a key or publish the workspace's standups. Handed over from the
+Members page, one press per feature.
 
 **Wiring it up.** Signed webhooks, automation rules, and an MCP server with seventeen
 tools so Claude, Cursor or Copilot can ask about any of it. The tool list respects
