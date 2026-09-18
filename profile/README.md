@@ -93,6 +93,23 @@ tools so Claude, Cursor or Copilot can ask about any of it. The tool list respec
 the same per-workspace switches the dashboard does, so an assistant is never offered
 a feature that workspace has turned off.
 
+## Coming next
+
+Nothing here is built yet, and the order follows what people ask for.
+
+- **Celebrations** — birthdays and work anniversaries announced in a channel on
+  the day, with the roster held in Morgenruf rather than a spreadsheet
+- **Calendar** — hold the hour a coffee chat pair agreed on their calendars,
+  not only in the message
+- **Meet and Teams rooms** created for a pairing the way Zoom already is
+- **Microsoft Teams** as a platform alongside Slack (in progress)
+- **Onboarding journeys** — a sequence over someone's first fortnight
+
+Announcements go out in [Discussions](https://github.com/morgenruf/morgenruf/discussions)
+and the [release notes](https://github.com/morgenruf/morgenruf/releases).
+[Ask for one](https://github.com/morgenruf/morgenruf/discussions/new?category=ideas)
+and it moves up.
+
 ## Why self-host
 
 |  | Morgenruf | Hosted alternatives |
